@@ -2,7 +2,8 @@
 	{
 		"name": "Enders Gate Marketplace",
 		"link": "projects/front/enders_gate_marketplace",
-		"code": "https://marketplace.endersgate.gg/",
+		"liveDemo": "https://marketplace.endersgate.gg/",
+		"repo": "https://github.com/5HeadGames/EndersGate_marketplace",
 		"image": "/img/eg_marketplace.png",
 		"codeDescription": {
 			"paragraphs": [
@@ -24,7 +25,7 @@
 	{
 		"name": "Enders Gate Website",
 		"link": "projects/front/enders_gate_website",
-		"code": "https://www.endersgate.gg/",
+		"liveDemo": "https://www.endersgate.gg/",
 		"image": "/img/eg_website.png",
 		"codeDescription": {
 			"paragraphs": [
@@ -49,7 +50,8 @@
 	{
 		"name": "Share Eth",
 		"link": "projects/front/share_eth",
-		"code": "https://shareeth.vercel.app/",
+		"liveDemo": "https://shareeth.vercel.app/",
+		"repo": "https://shareeth.vercel.app/",
 		"image": "/img/share_eth.png",
 		"codeDescription": {
 			"paragraphs": [
@@ -74,12 +76,18 @@
 	{
 		"name": "CoCo Mint Website",
 		"link": "projects/front/coco",
-		"code": "https://mintcoco.club/",
+		"liveDemo": "https://mintcoco.club/",
 		"image": "/img/coco.png",
 		"codeDescription": {
 			"paragraphs": [
 				{
-					"text": "CoCo Mint Web is a platform where Luxury Bottles are available to purchase, these bottles are divided into NFTs and these NFTs can be either collected or exchanged (if you own all the collection) in the platform."
+					"text": "CoCo Mint Web is an innovative and cutting-edge platform that specializes in the trade and collection of Luxury Bottles. These exclusive bottles, often featuring exquisite designs and materials, have become a symbol of status and prestige among collectors and enthusiasts. In order to provide a seamless and secure way to acquire, trade, and showcase these prized possessions, CoCo Mint Web has integrated blockchain technology and non-fungible tokens (NFTs)."
+				},
+				{
+					"text": "The Luxury Bottles on CoCo Mint Web are divided into unique NFTs, which represent the digital ownership and provenance of each bottle. This allows collectors to easily verify the authenticity and rarity of their acquisitions. Additionally, each NFT can be securely and instantly transferred between users on the platform, enabling a global market for Luxury Bottle trading."
+				},
+				{
+					"text": "In summary, CoCo Mint Web is revolutionizing the world of Luxury Bottle collecting and trading by harnessing the power of NFTs and blockchain technology. The platform offers a secure, user-friendly, and interactive environment for enthusiasts to discover, acquire, and showcase their prized collections, all while connecting with like-minded individuals who share their passion."
 				}
 			]
 		}
@@ -88,19 +96,42 @@
 	{
 		"name": "NFT Bolster",
 		"link": "projects/front/nft_bolster",
-		"code": "https://www.nftbolster.com/",
+		"liveDemo": "https://www.nftbolster.com/",
 		"image": "/img/bolster.png",
 		"codeDescription": {
-			"paragraphs": [{ "text": "" }]
+			"paragraphs": [
+				{
+					"text": "Bolster is a platform that understands the immense value NFTs hold in promoting culture and art. We are also aware of the extreme volatility and significant losses NFT prices can experience, such as during the crypto winter. As a result, Bolster has taken a unique approach by curating art projects that come with the option to be redeemed for physical assets."
+				},
+				{
+					"text": "This innovative structure means that if the value of an NFT or a collection of NFTs drops below the market value of the physical asset it represents, there is an economic incentive to purchase it. This can either elevate the NFT(s) value or allow an individual to acquire the physical asset at a reduced price. If the NFT(s) is redeemed, it will be burned."
+				},
+				{
+					"text": "To redeem an NFT or a collection of NFTs on the Bolster platform, collectors must possess the entire collection. If the collection contains only one NFT, it can be redeemed at any time. By providing this redemption option, Bolster adds an extra layer of value and stability to its NFT offerings."
+				},
+				{
+					"text": "Join the Bolster community today, and discover a new way to engage with art and culture through our unique NFT platform. Enjoy the added security and stability of our redemption option, as you immerse yourself in the vibrant world of digital collectibles."
+				}
+			]
 		}
 	},
 	{
 		"name": "Shhh Spirits",
 		"link": "projects/front/shhh_spirits",
-		"code": "https://www.shhhspirits.com/",
+		"liveDemo": "https://www.shhhspirits.com/",
 		"image": "/img/shhh_spirits.png",
 		"codeDescription": {
-			"paragraphs": [{ "text": "" }]
+			"paragraphs": [
+				{
+					"text": "Shh Spirits is a platform that not only transports you to the world of ultra-premium Mezcal but also provides a unique marketplace where you can purchase bottles intimately connected to Shh Spirits. Lovingly crafted in Oaxaca, Mexico, our extraordinary and delectable liquid holds a secret SOUL infused within each bottle, which can only be revealed to its rightful owner. A spirit that embodies another spirit, acting as a guardian and reflecting your uniqueness."
+				},
+				{
+					"text": "On our Shop, you can explore a diverse selection of Shh Spirits bottles, each with its own distinct character and charm. Browse through the various offerings, learning about the production techniques, flavor profiles, and the artisans behind each creation. Our user-friendly interface makes it easy to find the perfect bottle to match your taste or to gift to someone special."
+				},
+				{
+					"text": "Embark on a journey with Shh Spirits, a platform that offers more than just Mezcal. Delve into the enchanting secret SOUL of our Mezcal, and immerse yourself in a one-of-a-kind experience while exploring a curated marketplace designed for true connoisseurs."
+				}
+			]
 		}
 	}
 ]

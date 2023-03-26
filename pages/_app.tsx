@@ -13,9 +13,6 @@ import 'styles/fontawesome/fontawesome.css';
 import Head from 'next/head';
 import AppLayout from 'components/common/Layouts';
 /* import { Images } from 'consts'; */
-import { store } from '../redux/store';
-import { Provider } from 'react-redux';
-import { Footer } from 'components/footer';
 function MyApp({
 	Component,
 	pageProps,
@@ -45,21 +42,19 @@ function MyApp({
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
 			</Head>
 			<QueryClientProvider client={queryClientRef.current}>
-				<Provider store={store}>
-					<ThemeContext.Provider value={{ theme, setTheme }}>
-						<div
-							className={clsx(
-								'font-montserrat min-h-screen text-gray-800',
-								'transition-colors duration-1000',
-								theme
-							)}
-						>
-							<AppLayout />
+				<ThemeContext.Provider value={{ theme, setTheme }}>
+					<div
+						className={clsx(
+							'font-montserrat min-h-screen text-gray-800',
+							'transition-colors duration-1000',
+							theme
+						)}
+					>
+						<AppLayout />
 
-							<Component {...pageProps} />
-						</div>
-					</ThemeContext.Provider>
-				</Provider>
+						<Component {...pageProps} />
+					</div>
+				</ThemeContext.Provider>
 			</QueryClientProvider>
 		</>
 	);

@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002FeBar\u002Fbottle\u002F[id]","\u002Fbottle\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

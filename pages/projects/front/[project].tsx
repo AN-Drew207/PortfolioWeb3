@@ -22,13 +22,13 @@ const Project = () => {
 			</h1>
 			<img src={project.image} className="md:w-2/3 rounded-xl" alt="" />
 			<a
-				href={(project as any).code}
+				href={(project as any).liveDemo}
 				target="_blank"
 				className={clsx(
 					'text-center text-white text-xl font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54 hover:text-white hover:bg-primary transition-all duration-500'
 				)}
 			>
-				Code
+				Live Demo
 			</a>
 			<div className="flex flex-col gap-8 items-center justify-center w-full">
 				{' '}

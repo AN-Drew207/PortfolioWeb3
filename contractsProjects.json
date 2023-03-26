@@ -5,6 +5,7 @@
 		"link": "projects/contract/eg_marketplace",
 		"image": "/img/eg_marketplace.png",
 		"code": "https://polygonscan.com/address/0x71bA14e545014899b990bb5Ee36dB47Aebc12b01#code",
+		"repo": "https://github.com/5HeadGames/EndersGate_marketplace/blob/main/Contracts/contracts/ClockSaleMultiTokens.sol",
 		"codeDescription": {
 			"paragraphs": [
 				{
@@ -52,6 +53,7 @@
 		"contractName": "ClockSaleOwnable.sol",
 		"link": "/contracts/eg_shop",
 		"code": "https://polygonscan.com/address/0xB72b9223FE8862B8a29919b18c552F30085787ad#code",
+		"repo": "https://github.com/5HeadGames/EndersGate_marketplace/blob/main/Contracts/contracts/ClockSaleOwnable.sol",
 		"image": "/img/shop.png",
 		"codeDescription": {
 			"paragraphs": [
