@@ -73,8 +73,8 @@ export const Message: React.FunctionComponent<{
 
 export const Logo = () => (
 	<Link href="/">
-		<div className="mr-4 md:py-0 h-10 cursor-pointer">
-			<img src="/logos/ac.png" className="h-10" alt="" />
+		<div className="mr-4 md:py-0 md:h-10 h-6 cursor-pointer">
+			<img src="/logos/ac.png" className="md:h-10 h-6" alt="" />
 		</div>
 	</Link>
 );
