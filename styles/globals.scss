@@ -1,4 +1,6 @@
 @import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
 
 @font-face {
 	font-family: 'VagRounded';
@@ -64,11 +66,25 @@
 } */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
 *,
 html,
 body {
+	// font-family: 'Bebas Neue', cursive;
 	font-family: 'LiberationSans';
+	scroll-behavior: smooth;
+}
+
+.titleLogo * {
+	font-family: 'Ramabhadra', sans-serif;
+}
+
+.titleLogo {
+	font-family: 'Ramabhadra', sans-serif;
+}
+
+.subTitleMain {
+	font-family: 'Fjalla One', sans-serif;
 }
 
 .Raleway {
