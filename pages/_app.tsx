@@ -10,6 +10,8 @@ import 'styles/fonts.scss';
 import 'styles/styles-ant.scss';
 import 'styles/index.scss';
 import 'styles/fontawesome/fontawesome.css';
+import 'swiper/css';
+
 import Head from 'next/head';
 import AppLayout from 'components/common/Layouts';
 /* import { Images } from 'consts'; */

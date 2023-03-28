@@ -8,6 +8,7 @@ export const FrontProjectItem: React.FC<any> = ({
 	link,
 	image,
 	description,
+	hover,
 }) => {
 	return (
 		<Link href={link}>
@@ -15,7 +16,9 @@ export const FrontProjectItem: React.FC<any> = ({
 				className={clsx(
 					className,
 					'flex flex-col items-center justify-center border border-white rounded-3xl',
-					'hover:scale-[105%] transition-all duration-500 xl:w-[800px] sm:w-[500px] w-[200px] overflow-hidden cursor-pointer relative'
+					{ ['hover:scale-[105%] xl:w-[800px] sm:w-[500px] w-[200px]']: hover },
+					{ ['w-full']: !hover },
+					'transition-all duration-500  overflow-hidden cursor-pointer relative'
 				)}
 			>
 				<img src={image} className="w-full" alt="" />

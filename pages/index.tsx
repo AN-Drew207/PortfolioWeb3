@@ -3,6 +3,11 @@ import { Reveal } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 import Typewriter from 'typewriter-effect';
 import clsx from 'clsx';
+import { ItemTech } from 'components/common/ItemTech';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Zoom } from 'swiper';
+import { FrontProjectItem } from 'components/projects/ProjectItem';
+import { SkillItem } from 'components/common/SkillItem';
 
 export const customAnimation = keyframes`
   from {
@@ -29,8 +34,79 @@ export const gapAnimation = keyframes`
 `;
 
 const Home = () => {
+	const techs = [
+		{ name: 'Next.js', img: '/icons/next-js.svg' },
+		{ name: 'Typescript', img: '/icons/typescript.png' },
+		{ name: 'Tailwind', img: '/icons/Tailwind.png' },
+		{ name: 'Sass', img: '/icons/sass.png' },
+		{ name: 'Solidity', img: '/icons/Solidity.png' },
+		{ name: 'Hardhat', img: '/icons/hardhat.png' },
+		{ name: 'Ethereum', img: '/icons/eth.png' },
+		{ name: 'Polygon', img: '/icons/matic.png' },
+	];
+
+	const softSkills = [
+		{ name: 'Leader' },
+		{ name: 'Proactive' },
+		{ name: 'Autodidact' },
+		{ name: 'Empathic' },
+		{ name: 'Communicative' },
+		{ name: 'Continually learning and improving' },
+
+		{ name: 'Responsible' },
+		{ name: 'Resilient' },
+		{ name: 'Unafraid about changes' },
+		{ name: 'Innovator' },
+	];
+
+	const frontProjects = [
+		{
+			name: 'Enders Gate Marketplace',
+			link: 'projects/front/enders_gate_marketplace',
+			image: '/img/eg_marketplace.png',
+			description:
+				'NFT marketplace where you can sell or buy any NFT related to Enders Gate',
+		},
+		{
+			name: 'Enders Gate Website',
+			link: 'projects/front/enders_gate_website',
+			image: '/img/eg_website.png',
+			description:
+				'Website where you can find EG roadmap, all the news about Enders Gate and all the functionalities related to their NFTs',
+		},
+		{
+			name: 'ShareEth',
+			link: 'projects/front/share_eth',
+			image: '/img/share_eth.png',
+			description:
+				'Social media app to allow content creators to monetize over their work using streams of income. (Hackathon Project made in ETHOnline 2022)',
+		},
+		{
+			name: 'CoCo Mint Page',
+			link: 'projects/front/coco',
+			image: '/img/coco.png',
+			description:
+				'CoCo Mint Web is a platform where Luxury Bottles are available to purchase, these bottles are divided into NFTs and these NFTs can be either collected or exchanged in the platform.',
+		},
+
+		{
+			name: 'NFT Bolster',
+			link: 'projects/front/nft_bolster',
+			image: '/img/bolster.png',
+			description:
+				'NFT Bolster is a platform where NFTs are backed by real assets in order to have a floor price in the market, this platform allo users to purchase NFTs backed by certificated assets in the market',
+		},
+		{
+			name: 'Shhh Spirits',
+			link: 'projects/front/shhh_spirits',
+			image: '/img/shhh_spirits.png',
+			description:
+				'Shhh Spirits is a platform where users can look at their NFTs related to Shhh and buy Shhh Spirits products by using a Shopify Store by and easy and secure purchase process.',
+		},
+	];
+
 	return (
-		<div className="min-h-screen flex flex-col items-center justify-center w-full">
+		<div className="min-h-screen flex flex-col items-center justify-center w-full pb-32 bg-overlay">
 			<div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-secondary to-overlay py-10 md:px-36 px-10 w-full relative">
 				<img
 					className="absolute w-full h-full top-0 left-0"
@@ -113,8 +189,9 @@ const Home = () => {
 				className="flex md:flex-row flex-col justify-center w-full py-24 md:px-36 px-10 gap-16 bg-overlay"
 				id="about"
 			>
-				<div className="flex flex-col gap-6 w-1/2">
-					<h2 className="text-center text-white text-4xl titleLogo text-primary font-[600] whitespace-nowrap">
+				<div className="flex flex-col items-center gap-6 md:w-1/2 w-full">
+					<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+						<span className="text-white">{'< '}</span>
 						<Typewriter
 							onInit={(typewriter) => {
 								typewriter
@@ -137,6 +214,7 @@ const Home = () => {
 								}, 10000);
 							}}
 						/>
+						<span className="text-white">{' />'}</span>
 					</h2>
 					<div className="flex flex-col gap-4">
 						<p className="text-justify text-white">
@@ -160,14 +238,112 @@ const Home = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-col w-1/2">
+				<div className="flex flex-col md:w-1/2 w-full">
 					<img src="/logos/ac.png" alt="" />
 				</div>
 			</div>
-			<div className="flex lex-col justify-center w-full py-24 md:px-36 px-10 gap-16 bg-overlay">
-				<h2 className="text-center text-white text-4xl titleLogo text-primary font-bold whitespace-nowrap">
-					Tooling
+			<div className="flex flex-col gap-10 justify-center items-center w-full py-10 md:px-36 px-10 gap-16 bg-overlay">
+				<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+					<span className="text-white">{'< '}</span>
+					<Typewriter
+						onInit={(typewriter) => {
+							typewriter
+								.typeString('Tooling')
+								.pauseFor(8000)
+								.deleteAll()
+								.start();
+							setInterval(() => {
+								typewriter
+									.typeString('Tooling')
+									.pauseFor(8000)
+									.deleteAll()
+									.start();
+							}, 10000);
+						}}
+					/>
+					<span className="text-white">{' />'}</span>
 				</h2>
+				<div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 p-4 w-1/2 rounded-xl">
+					{techs.map(({ name, img }, i) => (
+						<ItemTech name={name} img={img} />
+					))}
+				</div>
+			</div>{' '}
+			<div className="flex flex-col gap-10 justify-center items-center w-full py-10 md:px-36 px-10 gap-16 bg-overlay">
+				<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+					<span className="text-white">{'< '}</span>
+					<Typewriter
+						onInit={(typewriter) => {
+							typewriter
+								.typeString('Projects')
+								.pauseFor(8000)
+								.deleteAll()
+								.start();
+							setInterval(() => {
+								typewriter
+									.typeString('Projects')
+									.pauseFor(8000)
+									.deleteAll()
+									.start();
+							}, 10000);
+						}}
+					/>
+					<span className="text-white">{' />'}</span>
+				</h2>
+				<div className="sm:w-2/3 w-full">
+					<Swiper
+						slidesPerView={1}
+						autoplay={{
+							delay: 5000,
+							disableOnInteraction: false,
+						}}
+						loop={true}
+						spaceBetween={10}
+						modules={[Zoom, Autoplay]}
+					>
+						{frontProjects.map(({ name, link, image, description }) => {
+							return (
+								<SwiperSlide>
+									<div className="px-1">
+										<FrontProjectItem
+											name={name}
+											link={link}
+											image={image}
+											description={description}
+										/>
+									</div>
+								</SwiperSlide>
+							);
+						})}
+					</Swiper>
+				</div>
+			</div>
+			<div className="flex flex-col gap-10 justify-center items-center w-full py-10 md:px-36 px-10 gap-16 bg-overlay">
+				<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+					<span className="text-white">{'< '}</span>
+					<Typewriter
+						onInit={(typewriter) => {
+							typewriter
+								.typeString('Soft Skills')
+								.pauseFor(7500)
+								.deleteAll()
+								.start();
+							setInterval(() => {
+								typewriter
+									.typeString('Soft Skills')
+									.pauseFor(7500)
+									.deleteAll()
+									.start();
+							}, 10000);
+						}}
+					/>
+					<span className="text-white">{' />'}</span>
+				</h2>
+				<div className="flex flex-wrap md:gap-x-24 gap-x-10 gap-y-16 items-center justify-center w-2/3">
+					{softSkills.map(({ name }, i) => (
+						<SkillItem name={name} className={`floating-${i + 1}`} />
+					))}
+				</div>
 			</div>
 		</div>
 	);

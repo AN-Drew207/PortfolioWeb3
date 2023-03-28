@@ -91,6 +91,29 @@ body {
 	font-family: 'RalewayBold';
 }
 
+@for $i from 0 through 15 {
+	.floating-#{$i} {
+		animation-name: floating;
+		animation-duration: $i % 5 * 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+		margin-left: 30px;
+		margin-top: 5px;
+	}
+
+	@keyframes floating {
+		0% {
+			transform: translate(0, 0px);
+		}
+		50% {
+			transform: translate(0, (($i)+3) %5 * 5px);
+		}
+		100% {
+			transform: translate(0, -0px);
+		}
+	}
+}
+
 .loader {
 	position: relative;
 	width: 350px;

@@ -121,6 +121,7 @@ const Projects = () => {
 								link={link}
 								image={image}
 								description={description}
+								hover
 							/>
 						);
 					})}
