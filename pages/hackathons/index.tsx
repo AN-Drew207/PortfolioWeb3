@@ -1,0 +1,80 @@
+import clsx from 'clsx';
+import {
+	FrontProjectItem,
+	ContractProjectItem,
+} from 'components/projects/ProjectItem';
+import * as React from 'react';
+import Typewriter from 'typewriter-effect';
+
+const Projects = () => {
+	const hackathons = [
+		{
+			name: 'DAO Factoring',
+			link: 'hackathons/dao_factoring',
+			liveDemo: 'https://hack-fs.vercel.app/',
+			hackathonPage: 'https://ethglobal.com/showcase/shareeth-4yymo',
+			image: '/img/daofactoring.png',
+			description:
+				'Factoring app to allow daos to issue invoices to clients and sell the ownership of the invoices to increase capital efficiency',
+		},
+
+		{
+			name: 'Share Eth',
+			link: 'hackathons/share_eth',
+			liveDemo: 'https://shareeth.vercel.app/',
+			hackathonPage: 'https://ethglobal.com/showcase/daofactoring-0tuvp',
+			image: '/img/share_eth.png',
+			description:
+				'Introducing ShareEth, a hackathon project turned social media app that empowers content creators by enabling them to monetize their work through various income streams. Our primary goals are to ensure security and privacy for both the content and our users, while providing a dynamic and engaging user experience.',
+		},
+		{
+			name: 'ChainScore',
+			link: 'hackathons/chainscore',
+			liveDemo: 'https://hack-money.vercel.app/',
+			hackathonPage: 'https://ethglobal.com/showcase/chainscore-jizuu',
+			image: '/img/chainscore.png',
+			description:
+				'A credit score system that allows DAOs to create loans without collateral',
+		},
+	];
+
+	return (
+		<div className="min-h-screen flex flex-col items-center py-28 bg-gray-900 gap-6">
+			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+				<span className="text-white">{'< '}</span>
+				<Typewriter
+					onInit={(typewriter) => {
+						typewriter
+							.typeString('Hackathons')
+							.pauseFor(8000)
+							.deleteAll()
+							.start();
+						setInterval(() => {
+							typewriter
+								.typeString('Hackathons')
+								.pauseFor(8000)
+								.deleteAll()
+								.start();
+						}, 10000);
+					}}
+				/>
+				<span className="text-white">{' />'}</span>
+			</h2>
+
+			<div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
+				{hackathons.map(({ name, link, image, description }, e) => {
+					return (
+						<FrontProjectItem
+							name={name}
+							link={link}
+							image={image}
+							description={description}
+							hover
+						/>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+export default Projects;

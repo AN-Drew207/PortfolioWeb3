@@ -4,6 +4,7 @@ import {
 	ContractProjectItem,
 } from 'components/projects/ProjectItem';
 import * as React from 'react';
+import Typewriter from 'typewriter-effect';
 
 const Projects = () => {
 	const frontProjects = [
@@ -67,18 +68,25 @@ const Projects = () => {
 		},
 
 		{
+			name: 'Mezcal Bottle Collection',
+			contractName: 'MezcalBottleCollection.sol',
+			link: 'projects/contract/bottle_collection',
+			image: '/img/shhh_spirits.png',
+		},
+
+		{
 			name: 'CoCo Bottle Collection',
-			contractName: 'BottleCollection.sol',
+			contractName: 'CoCoBottleCollection.sol',
+			link: 'projects/contract/bottle_collection',
+			image: '/img/coco.png',
+		},
+		{
+			name: 'CoCo Bottle Exchange',
+			contractName: 'BottleExchange.sol',
 			link: 'projects/contract/bottle_collection',
 			image: '/img/coco.png',
 		},
 
-		{
-			name: 'CoCo Bottle Exchange',
-			contractName: 'CoCoBottleExchange.sol',
-			link: 'projects/contract/coco_bottle_exchange',
-			image: '/img/coco.png',
-		},
 		{
 			name: 'Enders Pass Pack Collection',
 			contractName: 'ERC721SeaDrop.sol',
@@ -91,7 +99,26 @@ const Projects = () => {
 
 	return (
 		<div className="min-h-screen flex flex-col items-center py-28 bg-gray-900 gap-6">
-			<h1 className="text-center text-white text-4xl font-bold">Projects</h1>
+			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+				<span className="text-white">{'< '}</span>
+				<Typewriter
+					onInit={(typewriter) => {
+						typewriter
+							.typeString('Projects')
+							.pauseFor(8000)
+							.deleteAll()
+							.start();
+						setInterval(() => {
+							typewriter
+								.typeString('Projects')
+								.pauseFor(8000)
+								.deleteAll()
+								.start();
+						}, 10000);
+					}}
+				/>
+				<span className="text-white">{' />'}</span>
+			</h2>
 			<div className="flex sm:flex-row flex-col items-center justify-center w-full gap-12">
 				<div
 					className={clsx(
