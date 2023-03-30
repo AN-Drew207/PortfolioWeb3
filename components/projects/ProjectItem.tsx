@@ -48,7 +48,7 @@ export const CertificateItem: React.FC<any> = ({
 				className,
 				'flex flex-col items-center justify-center border border-white rounded-3xl',
 				'hover:scale-[105%] xl:w-[800px] sm:w-[500px] w-[200px]',
-				'transition-all duration-500  overflow-hidden cursor-pointer relative'
+				'transition-all duration-500  overflow-hidden relative'
 			)}
 		>
 			<img src={image} className="w-full" alt="" />

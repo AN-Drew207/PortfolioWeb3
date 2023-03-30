@@ -98,8 +98,13 @@ const Projects = () => {
 	const [section, setSection] = React.useState('front');
 
 	return (
-		<div className="min-h-screen flex flex-col items-center py-28 bg-gray-900 gap-6">
-			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+		<div className="min-h-screen flex flex-col items-center py-28 bg-gray-900 gap-6 relative">
+			<img
+				src="img/bgPortfolio.png"
+				className="fixed top-0 left-0 h-full w-[125vw] opacity-[0.25]"
+				alt=""
+			/>
+			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
 				<span className="text-white">{'< '}</span>
 				<Typewriter
 					onInit={(typewriter) => {
@@ -119,7 +124,7 @@ const Projects = () => {
 				/>
 				<span className="text-white">{' />'}</span>
 			</h2>
-			<div className="flex sm:flex-row flex-col items-center justify-center w-full gap-12">
+			<div className="flex sm:flex-row flex-col items-center justify-center w-full gap-12 relative">
 				<div
 					className={clsx(
 						'text-center text-white text-xl font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54',
