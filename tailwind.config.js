@@ -25,6 +25,7 @@ module.exports = {
 			primaryOpacity: 'var(--color-primary-opacity)',
 			secondary: 'var(--color-secondary)',
 			overlay: 'var(--color-overlay)',
+			overlay2: 'var(--color-overlay2)',
 			status: {
 				success: 'var(--color-alert-success)',
 				error: 'var(--color-alert-error)',

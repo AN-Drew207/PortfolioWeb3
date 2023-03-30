@@ -106,8 +106,8 @@ const Home = () => {
 	];
 
 	return (
-		<div className="min-h-screen flex flex-col items-center justify-center w-full pb-32 bg-overlay">
-			<div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-secondary to-overlay py-10 md:px-36 px-10 w-full relative">
+		<div className="min-h-screen flex flex-col items-center justify-center w-full bg-overlay relative overflow-hidden">
+			<div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-secondary to-overlay pt-48 md:px-36 px-10 w-full relative">
 				<img
 					className="absolute w-full h-full top-0 left-0"
 					src="/img/bgPortfolio.png"
@@ -217,7 +217,7 @@ const Home = () => {
 						<span className="text-white">{' />'}</span>
 					</h2>
 					<div className="flex flex-col gap-4">
-						<p className="text-justify text-white">
+						<p className="text-justify text-lg font-bold text-white">
 							Greetings! I am a Blockchain Solidity / Front End Web Developer
 							with expertise in Hardhat, Solidity, TypeScript, React, SASS, and
 							Tailwind. My passion lies in the blockchain realm, where I am
@@ -228,7 +228,7 @@ const Home = () => {
 							testnets (Goerli, Ropsten, Mumbai) as well as mainnets (Ethereum
 							and Polygon).
 						</p>
-						<p className="text-justify text-white">
+						<p className="text-justify text-lg font-bold text-white">
 							My mission is to make a significant impact in the blockchain
 							industry by delving deeper into DeFi, exploring cutting-edge
 							technologies such as zkProofs and DIDs, and optimizing the
@@ -238,11 +238,21 @@ const Home = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-col md:w-1/2 w-full">
-					<img src="/logos/ac.png" alt="" />
+				<div className="flex flex-col items-center justify-center md:w-1/2 w-full">
+					<img src="/logos/ac.png" className="md:w-1/2" alt="" />
 				</div>
 			</div>
-			<div className="flex flex-col gap-10 justify-center items-center w-full py-10 md:px-36 px-10 gap-16 bg-overlay">
+			<div className="flex flex-col gap-10 justify-center items-center w-full py-48 md:px-36 px-10 gap-16 bg-overlay2 relative">
+				<img
+					src="/img/downredline2.png"
+					className="w-[40%] rotate-180 absolute top-0 left-[-20%]"
+					alt=""
+				/>
+				<img
+					src="/img/downredline2.png"
+					className="w-[40%] absolute bottom-0 right-[-20%]"
+					alt=""
+				/>
 				<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
 					<span className="text-white">{'< '}</span>
 					<Typewriter
@@ -263,13 +273,13 @@ const Home = () => {
 					/>
 					<span className="text-white">{' />'}</span>
 				</h2>
-				<div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 p-4 w-1/2 rounded-xl">
+				<div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 p-4 w-2/3 rounded-xl">
 					{techs.map(({ name, img }, i) => (
 						<ItemTech name={name} img={img} />
 					))}
 				</div>
 			</div>{' '}
-			<div className="flex flex-col gap-10 justify-center items-center w-full py-10 md:px-36 px-10 gap-16 bg-overlay">
+			<div className="flex flex-col gap-10 justify-center items-center w-full py-24 md:px-36 px-10 gap-16 bg-overlay">
 				<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
 					<span className="text-white">{'< '}</span>
 					<Typewriter
@@ -318,8 +328,8 @@ const Home = () => {
 					</Swiper>
 				</div>
 			</div>
-			<div className="flex flex-col gap-10 justify-center items-center w-full py-10 md:px-36 px-10 gap-16 bg-overlay">
-				<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap">
+			<div className="flex flex-col gap-10 justify-center items-center w-full py-24 md:px-36 px-10 gap-16 bg-overlay relative">
+				<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
 					<span className="text-white">{'< '}</span>
 					<Typewriter
 						onInit={(typewriter) => {
@@ -339,7 +349,7 @@ const Home = () => {
 					/>
 					<span className="text-white">{' />'}</span>
 				</h2>
-				<div className="flex flex-wrap md:gap-x-24 gap-x-10 gap-y-16 items-center justify-center w-2/3">
+				<div className="flex flex-wrap gap-x-[15%] gap-y-24 items-center justify-center w-full md:px-36 px-10">
 					{softSkills.map(({ name }, i) => (
 						<SkillItem name={name} className={`floating-${i + 1}`} />
 					))}
