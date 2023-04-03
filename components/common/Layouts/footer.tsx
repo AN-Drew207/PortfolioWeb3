@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
 				</h2>
 				<div className="space-x-4">
 					<a
-						href="https://www.twitter.com"
+						href="https://twitter.com/andcont207"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-2xl hover:text-primary transition-all duration-500"
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
 						<i className="fab fa-twitter"></i>
 					</a>
 					<a
-						href="https://www.linkedin.com"
+						href="https://www.linkedin.com/in/andr%C3%A9s-contreras-b9612620b/"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-2xl hover:text-primary transition-all duration-500"
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
 					</a>
 
 					<a
-						href="https://www.instagram.com"
+						href="https://github.com/AN-Drew207"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-2xl hover:text-primary transition-all duration-500"
