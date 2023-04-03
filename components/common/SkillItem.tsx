@@ -11,7 +11,7 @@ export const SkillItem: React.FC<any> = ({ className, name }) => {
 			)}
 		>
 			<div className="flex flex-col gap-2 items-center justify-center relative bottom-0 bg-[#000000bb] ">
-				<h2 className="text-center text-xl text-white font-bold whitespace-nowrap">
+				<h2 className="text-center md:text-xl text-md text-white font-bold whitespace-nowrap">
 					{name}
 				</h2>
 			</div>

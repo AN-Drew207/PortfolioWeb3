@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
 	return (
 		<footer className="bg-overlay text-white py-6 w-full relative">
 			<div className="flex md:flex-row flex-col items-center justify-between gap-4 sm:px-16 px-8 w-full">
-				<h2 className="text-center font-bold !text-xl title !m-0">
+				<h2 className="text-center text-xl titleLogo">
 					{'< '}Connect with <span className="text-primary"> me</span>
 					{' />'}
 				</h2>
