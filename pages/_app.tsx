@@ -14,6 +14,7 @@ import 'swiper/css';
 
 import Head from 'next/head';
 import AppLayout from 'components/common/Layouts';
+import Footer from 'components/common/Layouts/footer';
 /* import { Images } from 'consts'; */
 function MyApp({
 	Component,
@@ -55,6 +56,7 @@ function MyApp({
 						<AppLayout />
 
 						<Component {...pageProps} />
+						<Footer />
 					</div>
 				</ThemeContext.Provider>
 			</QueryClientProvider>
