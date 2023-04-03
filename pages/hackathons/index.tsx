@@ -66,7 +66,7 @@ const Projects = () => {
 				<span className="text-white">{' />'}</span>
 			</h2>
 
-			<div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 relative">
+			<div className="flex flex-wrap items-center justify-center md:gap-x-12 gap-x-4 md:gap-y-8 gap-y-4 px-4 relative">
 				{hackathons.map(({ name, link, image, description }, e) => {
 					return (
 						<FrontProjectItem

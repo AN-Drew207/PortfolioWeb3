@@ -8,6 +8,7 @@ import { DropdownMenu } from '../dropdownMenu';
 import Styles from '../../landing/styles.module.scss';
 import { Button } from '../button';
 import { Dropdown } from '../dropdown/dropdown';
+import { SidebarMobile } from './sidebars/mobile';
 
 const navItems = [
 	{ name: 'Home', link: '/', icon: <MenuIcon /> },
@@ -19,7 +20,7 @@ const navItems = [
 
 export default function AppLayout() {
 	const router = useRouter();
-
+	const [sideBarOpen, setSidebarOpen] = React.useState(false);
 	return (
 		<>
 			<nav
@@ -47,6 +48,24 @@ export default function AppLayout() {
 						);
 					})}
 				</div>
+				<div className="md:hidden flex items-center justify-center">
+					<div
+						className="flex"
+						onClick={() => {
+							setSidebarOpen(true);
+						}}
+					>
+						<MenuIcon
+							className="h-6 w-6 text-white cursor-pointer"
+							aria-hidden="true"
+						/>
+					</div>
+				</div>
+				<SidebarMobile
+					sidebarOpen={sideBarOpen}
+					setSidebarOpen={setSidebarOpen}
+					navItems={navItems}
+				/>
 			</nav>
 		</>
 	);

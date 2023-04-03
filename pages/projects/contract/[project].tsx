@@ -18,9 +18,9 @@ const Contract = () => {
 				className="w-full h-full fixed top-0 left-0 opacity-[0.10]"
 				alt=""
 			/>
-			<div className="absolute top-28 md:left-16 left-10 text-primary">
+			<div className="absolute sm:top-28 top-16 md:left-16 sm:left-10 left-4 text-primary">
 				<Link href={'/projects'}>
-					<ChevronLeftIcon className="w-8 cursor-pointer" />
+					<ChevronLeftIcon className="sm:w-8 w-6 cursor-pointer" />
 				</Link>
 			</div>
 			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
@@ -48,7 +48,7 @@ const Contract = () => {
 				href={(contract as any).code}
 				target="_blank"
 				className={clsx(
-					'relative text-center text-white text-xl font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54 hover:text-white hover:bg-primary transition-all duration-500'
+					'relative text-center text-white md:text-xl sm:text-md text-[11px] font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54 hover:text-white hover:bg-primary transition-all duration-500'
 				)}
 			>
 				Verified Code
@@ -58,17 +58,17 @@ const Contract = () => {
 				{contract.codeDescription.paragraphs.map((paragraph, i) => {
 					return paragraph.subTexts ? (
 						<div className="flex flex-col gap-4 w-full">
-							<h2 className="text-lg font-bold text-white text-justify">
+							<h2 className="sm:text-lg text-sm font-bold text-white text-justify">
 								{paragraph.text}
 							</h2>
 							{paragraph.subTexts.map((text, i) => (
-								<p className="text-md text-white text-justify pl-4">
+								<p className="sm:text-md text-[11px] text-white text-justify pl-4">
 									<span className="font-bold">{i + 1} -</span> {text}
 								</p>
 							))}
 						</div>
 					) : (
-						<p className="text-lg font-bold text-white text-justify w-full">
+						<p className="sm:text-lg text-sm font-bold text-white text-justify w-full">
 							{paragraph.text}
 						</p>
 					);

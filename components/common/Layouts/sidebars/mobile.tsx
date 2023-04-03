@@ -24,7 +24,6 @@ export const SidebarMobile: React.FC<LayoutDashboardProps & any> = ({
 	setSidebarOpen = {},
 	initialFocus = null,
 	navItems = [],
-	dispatch,
 }) => {
 	const router = useRouter();
 
@@ -94,7 +93,7 @@ export const SidebarMobile: React.FC<LayoutDashboardProps & any> = ({
 														className={clsx(
 															'group flex items-center px-3 py-4 font-bold hover:opacity-90 text-md rounded-md  relative ',
 															{
-																'text-gray-800': item.link !== router.asPath,
+																'text-white': item.link !== router.asPath,
 															},
 															{ 'text-primary': item.link === router.asPath }
 														)}
@@ -115,7 +114,7 @@ export const SidebarMobile: React.FC<LayoutDashboardProps & any> = ({
 														className={clsx(
 															'group flex items-center px-3 py-4 font-bold hover:opacity-90 text-md rounded-md  relative ',
 															{
-																'text-gray-800': item.link !== router.asPath,
+																'text-white': item.link !== router.asPath,
 															},
 															{ 'text-primary': item.link === router.asPath }
 														)}

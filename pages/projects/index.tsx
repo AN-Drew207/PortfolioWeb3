@@ -124,10 +124,10 @@ const Projects = () => {
 				/>
 				<span className="text-white">{' />'}</span>
 			</h2>
-			<div className="flex sm:flex-row flex-col items-center justify-center w-full gap-12 relative">
+			<div className="flex sm:flex-row flex-col items-center justify-center w-full gap-x-12 gap-y-4 relative">
 				<div
 					className={clsx(
-						'text-center text-white text-xl font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54',
+						'text-center text-white md:text-xl text-sm font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54',
 						{ ['!text-white !bg-primary']: section == 'front' }
 					)}
 					onClick={() => setSection('front')}
@@ -136,7 +136,7 @@ const Projects = () => {
 				</div>
 				<div
 					className={clsx(
-						'text-center text-white text-xl font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54',
+						'text-center text-white md:text-xl text-sm font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54',
 						{ ['!text-white !bg-primary']: section == 'contracts' }
 					)}
 					onClick={() => setSection('contracts')}
@@ -145,7 +145,7 @@ const Projects = () => {
 				</div>
 			</div>
 			{section == 'front' ? (
-				<div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
+				<div className="flex flex-wrap items-center justify-center md:gap-x-12 gap-x-4 md:gap-y-8 gap-y-4 px-4 w-full">
 					{frontProjects.map(({ name, link, image, description }, e) => {
 						return (
 							<FrontProjectItem
@@ -159,7 +159,7 @@ const Projects = () => {
 					})}
 				</div>
 			) : (
-				<div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
+				<div className="flex flex-wrap items-center justify-center md:gap-x-12 gap-x-4 md:gap-y-8 gap-y-4 px-4 w-full">
 					{contractsProjects.map(({ name, contractName, link, image }, e) => {
 						return (
 							<ContractProjectItem
