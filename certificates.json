@@ -16,18 +16,18 @@
 	},
 	{
 		"name": "JavaScript (Intermediate) Certificate",
-		"link": "https://www.freecodecamp.org/certification/andrew207/javascript-algorithms-and-data-structures",
+		"link": "https://www.hackerrank.com/certificates/e594180b3b80",
 		"image": "/img/javascript_intermediate.jpg"
 	},
 	{
 		"name": "EFSET English Certificate 60/10 (B2 Upper Intermediate)",
-		"link": "https://www.freecodecamp.org/certification/andrew207/javascript-algorithms-and-data-structures",
+		"link": "https://www.efset.org/cert/wDL3oc",
 		"image": "/img/ef_english.png"
 	},
 
 	{
 		"name": "Responsive Web Design",
-		"link": "https://www.freecodecamp.org/certification/andrew207/javascript-algorithms-and-data-structures",
+		"link": "https://www.freecodecamp.org/certification/andrew207/responsive-web-design",
 		"image": "/img/responsive_web.png"
 	}
 ]
