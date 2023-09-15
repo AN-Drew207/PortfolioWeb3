@@ -29,13 +29,6 @@ const Projects = () => {
 			description:
 				'Social media app to allow content creators to monetize over their work using streams of income. (Hackathon Project made in ETHOnline 2022)',
 		},
-		{
-			name: 'CoCo Mint Page',
-			link: 'projects/front/coco',
-			image: '/img/coco.png',
-			description:
-				'CoCo Mint Web is a platform where Luxury Bottles are available to purchase, these bottles are divided into NFTs and these NFTs can be either collected or exchanged in the platform.',
-		},
 
 		{
 			name: 'NFT Bolster',
@@ -45,11 +38,26 @@ const Projects = () => {
 				'NFT Bolster is a platform where NFTs are backed by real assets in order to have a floor price in the market, this platform allo users to purchase NFTs backed by certificated assets in the market',
 		},
 		{
+			name: 'C3 Blockchain',
+			link: 'projects/front/c3',
+			image: '/img/c3.png',
+			description:
+				'C3 blockchain consists in a L2 blockchain base in the OP Stack with Goerli as L1, where we modified the core of the EVM where gas fees implementation is located. Only users with a WorldID (as a proof of personhood) can get fees from their smart contracts. All of this allows smart contracts builders to obtain revenue from the use of their smart contracts. This solves the issue of public goods or projects such as Safe not having a solid revenue source.',
+		},
+		{
 			name: 'Shhh Spirits',
 			link: 'projects/front/shhh_spirits',
 			image: '/img/shhh_spirits.png',
 			description:
 				'Shhh Spirits is a platform where users can look at their NFTs related to Shhh and buy Shhh Spirits products by using a Shopify Store by and easy and secure purchase process.',
+		},
+		{
+			name: 'Shhh Spirits Shopify',
+			link: 'projects/front/shhh_spirits_shopify',
+			liveDemo: 'https://shhhspirits.myshopify.com/',
+			image: '/img/shhh_spirits_shopify.png',
+			description:
+				'Shh Spirits is a platform that not only transports you to the world of ultra-premium Mezcal but also provides a unique marketplace where you can purchase bottles intimately connected to Shh Spirits. Lovingly crafted in Oaxaca, Mexico, our extraordinary and delectable liquid holds a secret SOUL infused within each bottle, which can only be revealed to its rightful owner. A spirit that embodies another spirit, acting as a guardian and reflecting your uniqueness.',
 		},
 	];
 
@@ -66,7 +74,12 @@ const Projects = () => {
 			link: 'projects/contract/eg_shop',
 			image: '/img/shop.png',
 		},
-
+		{
+			name: 'DAO Factoring Smart Contracts',
+			image: '/img/daofactoring.png',
+			link: 'projects/contract/dao_factoring',
+			contractName: 'Factoring.sol',
+		},
 		{
 			name: 'Mezcal Bottle Collection',
 			contractName: 'MezcalBottleCollection.sol',
@@ -104,7 +117,7 @@ const Projects = () => {
 				className="fixed top-0 left-0 h-full w-[125vw] opacity-[0.25]"
 				alt=""
 			/>
-			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
+			<h2 className="flex gap-1 text-center md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
 				<span className="text-white">{'< '}</span>
 				<Typewriter
 					onInit={(typewriter) => {

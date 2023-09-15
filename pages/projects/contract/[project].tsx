@@ -23,7 +23,7 @@ const Contract = () => {
 					<ChevronLeftIcon className="sm:w-8 w-6 cursor-pointer" />
 				</Link>
 			</div>
-			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
+			<h2 className="flex gap-1 text-center md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
 				<span className="text-white">{'< '}</span>
 				<Typewriter
 					onInit={(typewriter) => {
@@ -62,7 +62,7 @@ const Contract = () => {
 								{paragraph.text}
 							</h2>
 							{paragraph.subTexts.map((text, i) => (
-								<p className="sm:text-md text-[11px] text-white text-justify pl-4">
+								<p className="sm:text-md text-[12px] text-white text-justify pl-4">
 									<span className="font-bold">{i + 1} -</span> {text}
 								</p>
 							))}

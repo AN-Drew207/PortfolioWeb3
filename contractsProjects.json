@@ -80,7 +80,46 @@
 			]
 		}
 	},
+	{
+		"name": "DAO Factoring Smart Contracts",
+		"image": "/img/daofactoring.png",
+		"link": "projects/contract/dao_factoring",
+		"contractName": "Factoring.sol",
 
+		"code": "https://mumbai.polygonscan.com/address/0xB6B0B7Df32a6d6a1c5D4Ac6E92281434571e59F0#code",
+
+		"codeDescription": {
+			"paragraphs": [
+				{
+					"text": "DAO factoring app to allow daos to issue invoices to clients and sell the ownership of the invoices to increase capital efficiency. Usually when making transactions an invoice is issued, there are no tools in the web3 space that allow companies or daos to sell these invoices to receive liquid $$ on time in exchange for their invoices. "
+				},
+				{
+					"text": "This project is made with solidity and hardhat to handle the repayment system. It will be deployed on polygon. Uses IPFS/Filecoin to store metadata and legal documents related to the invoice. We also use ERC1155 tokens to create 'fractional' invoices. We created a subgraph to store and retrieve data to show in our frontend"
+				},
+				{
+					"text": "Factoring Contract:",
+					"subTexts": [
+						"The Factoring contract appears to be related to invoice factoring on the Ethereum blockchain.",
+						"It allows setting a discount rate for invoices.",
+						"It calculates the price of invoice fractions based on the principal amount and periods.",
+						"It provides functions for creating, approving, buying, and repaying invoices.",
+						"It has role-based access control to restrict specific actions to authorized parties.",
+						"It interacts with an Invoice contract. This contract is responsible for handling ERC-1155 tokens representing invoices."
+					]
+				},
+				{
+					"text": "Invoice Contract:",
+					"subTexts": [
+						"The Invoice contract implements the ERC-1155 standard and is designed for managing and minting invoice-related tokens.",
+						"It supports the minting and burning of ERC-1155 tokens.",
+						"It defines roles for URI setting, minting, and factoring, allowing access control over these functions.",
+						"It sets the base URI for generating token metadata URIs.",
+						"It interacts with an external contract implementing the IInvoice interface, which is likely responsible for defining the structure of invoice-related ERC-1155 tokens."
+					]
+				}
+			]
+		}
+	},
 	{
 		"name": "Mezcal Bottle Collection",
 		"contractName": "BottleCollection.sol",

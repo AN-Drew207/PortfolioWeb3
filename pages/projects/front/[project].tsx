@@ -6,15 +6,19 @@ import { useRouter } from 'next/router';
 import * as React from 'react';
 import Typewriter from 'typewriter-effect';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Zoom } from 'swiper';
+
 const Project = () => {
 	const { query } = useRouter();
-	const project = contracts.filter((contract, i) =>
+	const project: any = contracts.find((contract, i) =>
 		contract.link.includes(query.project?.toString() || '')
-	)[0];
+	);
+
 	return (
 		<div className="min-h-screen flex flex-col items-center py-28 bg-gray-900 gap-6 md:px-36 px-10 relative">
 			<img
-				src={project.image}
+				src={project?.image}
 				className="w-full h-full fixed top-0 left-0 opacity-[0.10]"
 				alt=""
 			/>
@@ -23,7 +27,7 @@ const Project = () => {
 					<ChevronLeftIcon className="w-8 cursor-pointer" />
 				</Link>
 			</div>
-			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo text-primary font-[600] whitespace-nowrap relative">
+			<h2 className="flex gap-1 text-center text-primary md:text-4xl text-xl titleLogo  font-[600] whitespace-nowrap relative">
 				<span className="text-white">{'< '}</span>
 				<Typewriter
 					onInit={(typewriter) => {
@@ -44,6 +48,31 @@ const Project = () => {
 				<span className="text-white">{' />'}</span>
 			</h2>
 
+			<Swiper
+				slidesPerView={1}
+				onSlideChange={() => console.log('slide change')}
+				onSwiper={(swiper) => console.log(swiper)}
+				zoom={true}
+				loop
+				autoplay
+				initialSlide={0}
+				modules={[Zoom, Navigation]}
+				navigation
+				className="mySwiper md:w-[75%] w-full rounded-xl"
+				spaceBetween={10}
+			>
+				{(project as any)?.images?.map((item: any) => (
+					<SwiperSlide className="w-full sm:min-w-[450px] min-w-[300px]">
+						<div className="w-full flex items-center justify-center">
+							<img
+								className="cursor-pointer w-full rounded-xl"
+								src={item}
+							></img>
+						</div>
+					</SwiperSlide>
+				))}
+			</Swiper>
+
 			<a
 				href={(project as any).liveDemo}
 				target="_blank"
@@ -53,8 +82,7 @@ const Project = () => {
 			>
 				Live Demo
 			</a>
-			<div className="flex flex-col gap-8 items-center justify-center w-full relative">
-				{' '}
+			<div className="flex flex-col gap-8 items-center justify-center md:w-[75%] w-full relative">
 				{(project as any).codeDescription.paragraphs.map((paragraph: any) => {
 					return (
 						<p className="text-lg text-white text-justify font-bold w-full">

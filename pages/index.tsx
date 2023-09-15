@@ -45,20 +45,6 @@ const Home = () => {
 		{ name: 'Polygon', img: '/icons/matic.png' },
 	];
 
-	const softSkills = [
-		{ name: 'Leader' },
-		{ name: 'Proactive' },
-		{ name: 'Autodidact' },
-		{ name: 'Empathic' },
-		{ name: 'Communicative' },
-		{ name: 'Continually learning and improving' },
-
-		{ name: 'Responsible' },
-		{ name: 'Resilient' },
-		{ name: 'Unafraid about changes' },
-		{ name: 'Innovator' },
-	];
-
 	const frontProjects = [
 		{
 			name: 'Enders Gate Marketplace',
@@ -81,13 +67,6 @@ const Home = () => {
 			description:
 				'Social media app to allow content creators to monetize over their work using streams of income. (Hackathon Project made in ETHOnline 2022)',
 		},
-		{
-			name: 'CoCo Mint Page',
-			link: 'projects/front/coco',
-			image: '/img/coco.png',
-			description:
-				'CoCo Mint Web is a platform where Luxury Bottles are available to purchase, these bottles are divided into NFTs and these NFTs can be either collected or exchanged in the platform.',
-		},
 
 		{
 			name: 'NFT Bolster',
@@ -97,11 +76,26 @@ const Home = () => {
 				'NFT Bolster is a platform where NFTs are backed by real assets in order to have a floor price in the market, this platform allo users to purchase NFTs backed by certificated assets in the market',
 		},
 		{
+			name: 'C3 Blockchain',
+			link: 'projects/front/c3',
+			image: '/img/c3.png',
+			description:
+				'C3 blockchain consists in a L2 blockchain base in the OP Stack with Goerli as L1, where we modified the core of the EVM where gas fees implementation is located. Only users with a WorldID (as a proof of personhood) can get fees from their smart contracts. All of this allows smart contracts builders to obtain revenue from the use of their smart contracts. This solves the issue of public goods or projects such as Safe not having a solid revenue source.',
+		},
+		{
 			name: 'Shhh Spirits',
 			link: 'projects/front/shhh_spirits',
 			image: '/img/shhh_spirits.png',
 			description:
 				'Shhh Spirits is a platform where users can look at their NFTs related to Shhh and buy Shhh Spirits products by using a Shopify Store by and easy and secure purchase process.',
+		},
+		{
+			name: 'Shhh Spirits Shopify',
+			link: 'projects/front/shhh_spirits_shopify',
+			liveDemo: 'https://shhhspirits.myshopify.com/',
+			image: '/img/shhh_spirits_shopify.png',
+			description:
+				'Shh Spirits is a platform that not only transports you to the world of ultra-premium Mezcal but also provides a unique marketplace where you can purchase bottles intimately connected to Shh Spirits. Lovingly crafted in Oaxaca, Mexico, our extraordinary and delectable liquid holds a secret SOUL infused within each bottle, which can only be revealed to its rightful owner. A spirit that embodies another spirit, acting as a guardian and reflecting your uniqueness.',
 		},
 	];
 
@@ -190,7 +184,7 @@ const Home = () => {
 				id="about"
 			>
 				<div className="flex flex-col items-center gap-6 md:w-1/2 w-full">
-					<h2 className="flex gap-1 text-center text-white md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
+					<h2 className="flex gap-1 text-center md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
 						<span className="text-white">{'< '}</span>
 						<Typewriter
 							onInit={(typewriter) => {
@@ -242,7 +236,7 @@ const Home = () => {
 					<img src="/logos/ac.png" className="md:w-1/2" alt="" />
 				</div>
 			</div>
-			<div className="flex flex-col gap-10 justify-center items-center w-full py-48 md:px-36 px-10 gap-16 bg-overlay2 relative">
+			<div className="flex flex-col justify-center items-center w-full py-48 md:px-36 px-10 gap-16 bg-overlay2 relative">
 				<img
 					src="/img/downredline2.png"
 					className="md:w-[40%] w-[80%] rotate-180 absolute top-0 left-[-20%] opacity-[0.70]"
@@ -253,7 +247,7 @@ const Home = () => {
 					className="md:w-[40%] w-[80%] absolute bottom-0 right-[-20%] opacity-[0.70]"
 					alt=""
 				/>
-				<h2 className="flex gap-1 text-center text-white md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
+				<h2 className="flex gap-1 text-center md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
 					<span className="text-white">{'< '}</span>
 					<Typewriter
 						onInit={(typewriter) => {
@@ -279,8 +273,8 @@ const Home = () => {
 					))}
 				</div>
 			</div>{' '}
-			<div className="flex flex-col gap-10 justify-center items-center w-full pt-24 md:px-36 sm:px-10 px-2 gap-16 bg-overlay">
-				<h2 className="flex gap-1 text-center text-white md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
+			<div className="flex flex-col  justify-center items-center w-full pt-24 md:px-36 sm:px-10 px-2 gap-16 bg-overlay">
+				<h2 className="flex gap-1 text-center  md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
 					<span className="text-white">{'< '}</span>
 					<Typewriter
 						onInit={(typewriter) => {
@@ -326,33 +320,6 @@ const Home = () => {
 							);
 						})}
 					</Swiper>
-				</div>
-			</div>
-			<div className="flex flex-col gap-10 justify-center items-center w-full py-24 md:px-36 px-10 gap-16 bg-overlay relative">
-				<h2 className="flex gap-1 text-center text-white md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap relative">
-					<span className="text-white">{'< '}</span>
-					<Typewriter
-						onInit={(typewriter) => {
-							typewriter
-								.typeString('Soft Skills')
-								.pauseFor(7500)
-								.deleteAll()
-								.start();
-							setInterval(() => {
-								typewriter
-									.typeString('Soft Skills')
-									.pauseFor(7500)
-									.deleteAll()
-									.start();
-							}, 10000);
-						}}
-					/>
-					<span className="text-white">{' />'}</span>
-				</h2>
-				<div className="flex flex-wrap sm:gap-x-[15%] gap-x-4 sm:gap-y-24 gap-y-8 items-center justify-center w-full md:px-36 sm:px-10 px-2">
-					{softSkills.map(({ name }, i) => (
-						<SkillItem name={name} className={`floating-${i + 1}`} />
-					))}
 				</div>
 			</div>
 		</div>

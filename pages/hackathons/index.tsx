@@ -36,6 +36,15 @@ const Projects = () => {
 			description:
 				'A credit score system that allows DAOs to create loans without collateral',
 		},
+		{
+			name: 'C3 Blockchain (Best Overall Winner)',
+			link: 'hackathons/c3',
+			liveDemo: 'https://c3-blockchain.vercel.app/',
+			hackathonPage: 'https://ethglobal.com/showcase/c3-blockchain-cnyv7',
+			image: '/img/c3.png',
+			description:
+				'C3 blockchain consists in a L2 blockchain base in the OP Stack with Goerli as L1, where we modified the core of the EVM where gas fees implementation is located. Only users with a WorldID (as a proof of personhood) can get fees from their smart contracts. All of this allows smart contracts builders to obtain revenue from the use of their smart contracts. This solves the issue of public goods or projects such as Safe not having a solid revenue source.',
+		},
 	];
 
 	return (

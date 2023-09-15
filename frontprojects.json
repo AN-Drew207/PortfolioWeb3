@@ -5,6 +5,20 @@
 		"liveDemo": "https://marketplace.endersgate.gg/",
 		"repo": "https://github.com/5HeadGames/EndersGate_marketplace",
 		"image": "/img/eg_marketplace.png",
+		"images": [
+			"/img/eg_mkt/1.png",
+			"/img/eg_mkt/2.png",
+			"/img/eg_mkt/3.png",
+			"/img/eg_mkt/4.png",
+			"/img/eg_mkt/5.png",
+			"/img/eg_mkt/6.png",
+			"/img/eg_mkt/7.png",
+			"/img/eg_mkt/8.png",
+			"/img/eg_mkt/9.png",
+			"/img/eg_mkt/10.png",
+			"/img/eg_mkt/11.png",
+			"/img/eg_mkt/12.png"
+		],
 		"codeDescription": {
 			"paragraphs": [
 				{
@@ -27,6 +41,14 @@
 		"link": "projects/front/enders_gate_website",
 		"liveDemo": "https://www.endersgate.gg/",
 		"image": "/img/eg_website.png",
+		"images": [
+			"/img/eg/1.png",
+			"/img/eg/2.png",
+			"/img/eg/3.png",
+			"/img/eg/4.png",
+			"/img/eg/5.png",
+			"/img/eg/6.png"
+		],
 		"codeDescription": {
 			"paragraphs": [
 				{
@@ -53,6 +75,14 @@
 		"liveDemo": "https://shareeth.vercel.app/",
 		"repo": "https://shareeth.vercel.app/",
 		"image": "/img/share_eth.png",
+		"images": [
+			"/img/share_eth/1.png",
+			"/img/share_eth/2.png",
+			"/img/share_eth/3.png",
+			"/img/share_eth/4.png",
+			"/img/share_eth/5.png",
+			"/img/share_eth/6.png"
+		],
 		"codeDescription": {
 			"paragraphs": [
 				{
@@ -74,30 +104,46 @@
 		}
 	},
 	{
-		"name": "CoCo Mint Website",
-		"link": "projects/front/coco",
-		"liveDemo": "https://mintcoco.club/",
-		"image": "/img/coco.png",
+		"name": "C3 Blockchain",
+		"link": "projects/front/c3",
+		"liveDemo": "https://c3-blockchain.vercel.app/",
+		"image": "/img/c3.png",
+		"images": [
+			"/img/c3/1.png",
+			"/img/c3/2.png",
+			"/img/c3/3.png",
+			"/img/c3/4.png",
+			"/img/c3/5.png",
+			"/img/c3/6.png",
+			"/img/c3/7.png",
+			"/img/c3/8.png",
+			"/img/c3/9.png"
+		],
 		"codeDescription": {
 			"paragraphs": [
 				{
-					"text": "CoCo Mint Web is an innovative and cutting-edge platform that specializes in the trade and collection of Luxury Bottles. These exclusive bottles, often featuring exquisite designs and materials, have become a symbol of status and prestige among collectors and enthusiasts. In order to provide a seamless and secure way to acquire, trade, and showcase these prized possessions, CoCo Mint Web has integrated blockchain technology and non-fungible tokens (NFTs)."
+					"text": "C3 blockchain consists in a L2 blockchain base in the OP Stack with Goerli as L1, where we modified the core of the EVM where gas fees implementation is located. Only users with a WorldID (as a proof of personhood) can get fees from their smart contracts. All of this allows smart contracts builders to obtain revenue from the use of their smart contracts. This solves the issue of public goods or projects such as Safe not having a solid revenue source."
 				},
 				{
-					"text": "The Luxury Bottles on CoCo Mint Web are divided into unique NFTs, which represent the digital ownership and provenance of each bottle. This allows collectors to easily verify the authenticity and rarity of their acquisitions. Additionally, each NFT can be securely and instantly transferred between users on the platform, enabling a global market for Luxury Bottle trading."
+					"text": "This project is a OP Stack hack/modification (op-geth, op-node, op-batcher, etc...) as a base of the blockchain and Worldcoin as a proof of personhood, we are getting to data from the Worldcoin Ethereum Contract. "
 				},
 				{
-					"text": "In summary, CoCo Mint Web is revolutionizing the world of Luxury Bottle collecting and trading by harnessing the power of NFTs and blockchain technology. The platform offers a secure, user-friendly, and interactive environment for enthusiasts to discover, acquire, and showcase their prized collections, all while connecting with like-minded individuals who share their passion."
+					"text": "In the frontend we are using Next.js 13, Typescript and TailwindCSS to build the landing page and the app that shows the tracking of the smart contracts with the most gas fees earned."
 				}
 			]
 		}
 	},
-
 	{
 		"name": "NFT Bolster",
 		"link": "projects/front/nft_bolster",
-		"liveDemo": "https://www.nftbolster.com/",
+		"liveDemo": "https://bolster-kohl.vercel.app/",
 		"image": "/img/bolster.png",
+		"images": [
+			"/img/bolster/1.png",
+			"/img/bolster/2.png",
+			"/img/bolster/3.png",
+			"/img/bolster/4.png"
+		],
 		"codeDescription": {
 			"paragraphs": [
 				{
@@ -115,11 +161,48 @@
 			]
 		}
 	},
+
+	{
+		"name": "Shhh Spirits Shopify",
+		"link": "projects/front/shhh_spirits_shopify",
+		"liveDemo": "https://shhhspirits.myshopify.com/",
+		"image": "/img/shhh_spirits_shopify.png",
+		"images": [
+			"/img/shh_spirits_shopify/1.png",
+			"/img/shh_spirits_shopify/2.png",
+			"/img/shh_spirits_shopify/3.png",
+			"/img/shh_spirits_shopify/4.png"
+		],
+		"codeDescription": {
+			"paragraphs": [
+				{
+					"text": "Shh Spirits is a platform that not only transports you to the world of ultra-premium Mezcal but also provides a unique marketplace where you can purchase bottles intimately connected to Shh Spirits. Lovingly crafted in Oaxaca, Mexico, our extraordinary and delectable liquid holds a secret SOUL infused within each bottle, which can only be revealed to its rightful owner. A spirit that embodies another spirit, acting as a guardian and reflecting your uniqueness."
+				},
+				{
+					"text": "On our Shop, you can explore a diverse selection of Shh Spirits bottles, each with its own distinct character and charm. Browse through the various offerings, learning about the production techniques, flavor profiles, and the artisans behind each creation. Our user-friendly interface makes it easy to find the perfect bottle to match your taste or to gift to someone special."
+				},
+				{
+					"text": "Embark on a journey with Shh Spirits, a platform that offers more than just Mezcal. Delve into the enchanting secret SOUL of our Mezcal, and immerse yourself in a one-of-a-kind experience while exploring a curated marketplace designed for true connoisseurs."
+				}
+			]
+		}
+	},
 	{
 		"name": "Shhh Spirits",
 		"link": "projects/front/shhh_spirits",
 		"liveDemo": "https://www.shhhspirits.com/",
 		"image": "/img/shhh_spirits.png",
+		"images": [
+			"/img/shh_spirits/1.png",
+			"/img/shh_spirits/2.png",
+			"/img/shh_spirits/3.png",
+			"/img/shh_spirits/4.png",
+			"/img/shh_spirits/5.png",
+			"/img/shh_spirits/6.png",
+			"/img/shh_spirits/7.png",
+			"/img/shh_spirits/8.png",
+			"/img/shh_spirits/9.png"
+		],
 		"codeDescription": {
 			"paragraphs": [
 				{

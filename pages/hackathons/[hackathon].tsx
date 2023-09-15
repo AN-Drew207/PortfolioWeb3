@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
 import Typewriter from 'typewriter-effect';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Zoom } from 'swiper';
 
 const Contract = () => {
 	const { query } = useRouter();
@@ -45,6 +47,35 @@ const Contract = () => {
 				/>
 				<span className="text-white">{' />'}</span>
 			</h2>
+
+			<Swiper
+				slidesPerView={2}
+				onSlideChange={() => console.log('slide change')}
+				onSwiper={(swiper) => console.log(swiper)}
+				zoom={true}
+				initialSlide={0}
+				modules={[Zoom]}
+				className="mySwiper w-full"
+				spaceBetween={10}
+				breakpoints={{
+					700: {
+						slidesPerView: 2,
+						centeredSlides: false,
+					},
+					100: {
+						slidesPerView: 1,
+						centeredSlides: true,
+					},
+				}}
+			>
+				{(hackathon as any)?.images?.map((item: any) => (
+					<SwiperSlide className="w-full sm:min-w-[450px] min-w-[300px]">
+						<div className="w-full flex items-center justify-center">
+							<img className="cursor-pointer w-full" src={item}></img>
+						</div>
+					</SwiperSlide>
+				))}
+			</Swiper>
 
 			<div className="flex sm:flex-row flex-col gap-6 items-centes justify-center w-full">
 				<a
