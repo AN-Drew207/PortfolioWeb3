@@ -101,60 +101,37 @@ const Home = () => {
 
 	return (
 		<div className="min-h-screen flex flex-col items-center justify-center w-full bg-overlay relative overflow-hidden">
-			<div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-secondary to-overlay pt-48 md:px-36 px-10 w-full relative">
+			<div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-secondary to-overlay pt-28 md:px-36 px-10 w-full relative">
 				<img
 					className="absolute w-full h-full top-0 left-0 opacity-[0.70]"
 					src="/img/bgPortfolio.png"
 					alt=""
 				/>
-				<div className="flex flex-col gap-2 items-center justify-center relative p-4">
-					<div className="flex flex-wrap items-center justify-center text-white 2xl:text-[120px] md:text-[80px] sm:text-[60px] text-[50px] font-bold  ">
-						<div className="flex flex-row items-center justify-end titleLogo">
-							{'<'}
-							<span className="text-primary titleLogo"> A</span>{' '}
-							<Reveal
-								triggerOnce
-								keyframes={customAnimation}
-								duration={4000}
-								className="overflow-hidden"
-							>
-								<h2 className="md:pr-6 pr-2 titleLogo">ndres </h2>
-							</Reveal>
-						</div>
-						<div className="flex flex-row items-center justify-start titleLogo">
-							<span className="text-primary titleLogo">C</span>
-							<Reveal
-								triggerOnce
-								keyframes={customAnimation}
-								duration={4000}
-								className="overflow-hidden titleLogo"
-							>
-								<h2 className="titleLogo">ontreras</h2>
-							</Reveal>
-							{'/>'}
-						</div>
+				<div className="flex flex-col gap-10 items-center justify-center relative p-4">
+					<div className="flex flex-col items-center justify-center w-full">
+						<img src="/logos/ac.png" className="md:w-1/2" alt="" />
 					</div>
 
-					<p className="flex gap-2 items-center justify-center text-white sm:text-2xl text-lg w-full subTitleMain">
+					<p className="flex flex-col gap-2 items-center justify-center text-white sm:text-2xl text-lg w-full subTitleMain">
 						<Reveal
 							triggerOnce
 							keyframes={customAnimation}
-							duration={8000}
-							className="overflow-hidden "
-						>
-							<div className="flex flex-row w-full justify-end whitespace-nowrap subTitleMain">
-								Smart Contracts
-							</div>
-						</Reveal>
-						/
-						<Reveal
-							triggerOnce
-							keyframes={customAnimation}
-							duration={8000}
+							duration={6000}
 							className="overflow-hidden"
 						>
-							<div className="flex flex-row w-full whitespace-nowrap justify-start subTitleMain">
-								DApps Developer
+							<div className="flex flex-row w-full justify-center whitespace-nowrap subTitleMain">
+								Elevating IT expectations, creating high-value products for
+								businesses.
+							</div>
+						</Reveal>
+						<Reveal
+							triggerOnce
+							keyframes={customAnimation}
+							duration={6000}
+							className="overflow-hidden"
+						>
+							<div className="flex flex-row w-full whitespace-nowrap justify-center subTitleMain">
+								Aspire, advance, and create for a brighter future.
 							</div>
 						</Reveal>
 					</p>
@@ -179,64 +156,11 @@ const Home = () => {
 					</svg>
 				</a>
 			</div>
+
 			<div
-				className="flex md:flex-row flex-col justify-center w-full py-24 md:px-36 px-10 gap-16 bg-overlay"
+				className="flex md:flex-row flex-col justify-center w-full py-24 md:px-36 px-10 gap-16 relative"
 				id="about"
 			>
-				<div className="flex flex-col items-center gap-6 md:w-1/2 w-full">
-					<h2 className="flex gap-1 text-center md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
-						<span className="text-white">{'< '}</span>
-						<Typewriter
-							onInit={(typewriter) => {
-								typewriter
-									.typeString('About Me')
-									.pauseFor(3000)
-									.deleteChars(2)
-									.typeString('Andres')
-									.pauseFor(3000)
-									.deleteAll()
-									.start();
-								setInterval(() => {
-									typewriter
-										.typeString('About Me')
-										.pauseFor(3000)
-										.deleteChars(2)
-										.typeString('Andres')
-										.pauseFor(3000)
-										.deleteAll()
-										.start();
-								}, 10000);
-							}}
-						/>
-						<span className="text-white">{' />'}</span>
-					</h2>
-					<div className="flex flex-col gap-4">
-						<p className="text-justify md:text-lg text-md font-bold text-white">
-							Greetings! I am a Blockchain Solidity / Front End Web Developer
-							with expertise in Hardhat, Solidity, TypeScript, React, SASS, and
-							Tailwind. My passion lies in the blockchain realm, where I am
-							constantly striving to become a highly-skilled Blockchain
-							developer and a future Smart Contract Auditor. My experience
-							encompasses ERC20, ERC721, ERC1155, marketplaces, DeFi, various
-							types of smart contracts, unit testing, and deployments on
-							testnets (Goerli, Ropsten, Mumbai) as well as mainnets (Ethereum
-							and Polygon).
-						</p>
-						<p className="text-justify md:text-lg text-md font-bold text-white">
-							My mission is to make a significant impact in the blockchain
-							industry by delving deeper into DeFi, exploring cutting-edge
-							technologies such as zkProofs and DIDs, and optimizing the
-							performance of my smart contracts. My ultimate goal is to become a
-							Smart Contract Auditor while continuing to excel as an experienced
-							Smart Contract Developer.
-						</p>
-					</div>
-				</div>
-				<div className="flex flex-col items-center justify-center md:w-1/2 w-full">
-					<img src="/logos/ac.png" className="md:w-1/2" alt="" />
-				</div>
-			</div>
-			<div className="flex flex-col justify-center items-center w-full py-48 md:px-36 px-10 gap-16 bg-overlay2 relative">
 				<img
 					src="/img/downredline2.png"
 					className="md:w-[40%] w-[80%] rotate-180 absolute top-0 left-[-20%] opacity-[0.70]"
@@ -247,32 +171,60 @@ const Home = () => {
 					className="md:w-[40%] w-[80%] absolute bottom-0 right-[-20%] opacity-[0.70]"
 					alt=""
 				/>
-				<h2 className="flex gap-1 text-center md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
-					<span className="text-white">{'< '}</span>
-					<Typewriter
-						onInit={(typewriter) => {
-							typewriter
-								.typeString('Tooling')
-								.pauseFor(8000)
-								.deleteAll()
-								.start();
-							setInterval(() => {
+				<div className="flex flex-col items-center gap-6 md:w-1/2 w-full">
+					<h2 className="flex gap-1 text-center md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
+						<span className="text-white">{'< '}</span>
+						<Typewriter
+							onInit={(typewriter) => {
 								typewriter
-									.typeString('Tooling')
-									.pauseFor(8000)
+									.typeString('About Us')
+									.pauseFor(3000)
+									.deleteChars(2)
+									.typeString('A2C')
+									.pauseFor(3000)
 									.deleteAll()
 									.start();
-							}, 10000);
-						}}
-					/>
-					<span className="text-white">{' />'}</span>
-				</h2>
-				<div className="flex flex-wrap items-center justify-center md:gap-x-8 gap-x-4 gap-y-6 p-4 md:w-2/3 w-full rounded-xl">
-					{techs.map(({ name, img }, i) => (
-						<ItemTech name={name} img={img} />
-					))}
+								setInterval(() => {
+									typewriter
+										.typeString('About Us')
+										.pauseFor(3000)
+										.deleteChars(2)
+										.typeString('A2C')
+										.pauseFor(3000)
+										.deleteAll()
+										.start();
+								}, 10000);
+							}}
+						/>
+						<span className="text-white">{' />'}</span>
+					</h2>
+					<div className="flex flex-col gap-4">
+						<p className="text-justify md:text-lg text-md font-bold text-white">
+							A2C is a dedicated company committed to enhancing and actualizing
+							the IT expectations of businesses. Our primary objective is to
+							develop high-value products that not only meet the needs of
+							enterprises but also elevate the user experience. With A2C, aspire
+							towards a future of innovation, advance your technological
+							landscape, and create a path to success. Our mantra is to Aspire,
+							Advance, and Create – Your Future, Our Commitment.
+						</p>
+						<p className="text-justify md:text-lg text-md font-bold text-white">
+							Our mission is to be the catalyst for business innovation,
+							offering bespoke solutions or generating fresh ideas for those
+							looking to establish their web platforms or implement robust
+							blockchain infrastructures. Our expertise spans a diverse
+							spectrum, encompassing Marketplaces, E-commerce, Landing Pages,
+							Blockchain Dapps, ERPs, Social Media, and beyond. Whatever your
+							vision entails, we possess the capabilities to turn it into a
+							tangible reality with unwavering commitment and proficiency.
+						</p>
+					</div>
 				</div>
-			</div>{' '}
+				<div className="flex flex-col items-center justify-center md:w-1/2 w-full">
+					<img src="/logos/ac.png" className="md:w-1/2" alt="" />
+				</div>
+			</div>
+
 			<div className="flex flex-col  justify-center items-center w-full pt-24 md:px-36 sm:px-10 px-2 gap-16 bg-overlay">
 				<h2 className="flex gap-1 text-center  md:text-4xl text-2xl titleLogo text-primary font-[600] whitespace-nowrap">
 					<span className="text-white">{'< '}</span>

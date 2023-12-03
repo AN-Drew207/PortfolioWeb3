@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
 		<footer className="bg-overlay text-white py-6 w-full relative">
 			<div className="flex md:flex-row flex-col items-center justify-between gap-4 sm:px-16 px-8 w-full">
 				<h2 className="text-center sm:text-xl text-md titleLogo">
-					{'< '}Connect with <span className="text-primary"> me</span>
+					{'< '}Connect with <span className="text-primary"> us</span>
 					{' />'}
 				</h2>
 				<div className="space-x-4">
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
 						<i className="fab fa-twitter"></i>
 					</a>
 					<a
-						href="https://www.linkedin.com/in/andr%C3%A9s-contreras-b9612620b/"
+						href="https://www.linkedin.com/company/ac-it-company"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="sm:text-2xl text-xl hover:text-primary transition-all duration-500"
