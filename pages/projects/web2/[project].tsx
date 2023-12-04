@@ -1,34 +1,35 @@
 import { ArrowLeftIcon, ChevronLeftIcon } from '@heroicons/react/outline';
 import clsx from 'clsx';
-import contracts from 'frontprojects.json';
+import web2Projects from 'web2Projects.json';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
 import Typewriter from 'typewriter-effect';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Zoom } from 'swiper';
+import { Autoplay, Navigation, Pagination, Zoom } from 'swiper';
 
 const Project = () => {
 	const { query } = useRouter();
-	const project: any = contracts.find((contract, i) =>
-		contract.link.includes(query.project?.toString() || '')
+	const project: any = web2Projects.find((project, i) =>
+		project.link.includes(query.project?.toString() || '')
 	);
 
 	return (
 		<div className="min-h-screen flex flex-col items-center py-28 bg-gray-900 gap-6 md:px-36 px-10 relative">
+			<div className="w-full h-full bg-white fixed top-0 left-0 opacity-[0.20]"></div>
 			<img
 				src={project?.image}
-				className="w-full h-full fixed top-0 left-0 opacity-[0.10]"
+				className="w-full h-full fixed top-0 left-0 opacity-[0.50]"
 				alt=""
 			/>
-			<div className="absolute top-28 md:left-16 left-10 text-primary">
+			<div className="absolute top-28 md:left-16 left-10 text-[#000]">
 				<Link href={'/projects'}>
 					<ChevronLeftIcon className="w-8 cursor-pointer" />
 				</Link>
 			</div>
-			<h2 className="flex gap-1 text-center text-primary md:text-4xl text-xl titleLogo  font-[600] whitespace-nowrap relative">
-				<span className="text-white">{'< '}</span>
+			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo font-[600] whitespace-nowrap relative">
+				<span className="text-[#000] pr-2">{'< '}</span>
 				<Typewriter
 					onInit={(typewriter) => {
 						typewriter
@@ -45,19 +46,23 @@ const Project = () => {
 						}, 10000);
 					}}
 				/>
-				<span className="text-white">{' />'}</span>
+				<span className="text-[#000]">{' / >'}</span>
 			</h2>
 
 			<Swiper
 				slidesPerView={1}
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}
-				zoom={true}
-				loop
-				autoplay
-				initialSlide={0}
-				modules={[Zoom, Navigation]}
+				zoom
+				pagination
 				navigation
+				loop
+				autoplay={{
+					delay: 3000,
+					disableOnInteraction: false,
+				}}
+				initialSlide={0}
+				modules={[Zoom, Navigation, Pagination, Autoplay]}
 				className="mySwiper md:w-[75%] w-full rounded-xl"
 				spaceBetween={10}
 			>
@@ -77,7 +82,8 @@ const Project = () => {
 				href={(project as any).liveDemo}
 				target="_blank"
 				className={clsx(
-					'relative text-center text-white text-xl font-bold px-4 py-2 rounded-xl border border-primary cursor-pointer w-54 hover:text-white hover:bg-primary transition-all duration-500'
+					'relative text-center text-white md:text-xl text-sm font-[450] px-4 py-2 rounded-xl border border-white cursor-pointer w-54',
+					'hover:text-[#000] hover:bg-white transition-all duration-500'
 				)}
 			>
 				Live Demo
@@ -85,7 +91,7 @@ const Project = () => {
 			<div className="flex flex-col gap-8 items-center justify-center md:w-[75%] w-full relative">
 				{(project as any).codeDescription.paragraphs.map((paragraph: any) => {
 					return (
-						<p className="text-lg text-white text-justify font-bold w-full">
+						<p className="text-lg text-white text-justify font-[500] w-full">
 							{paragraph.text}
 						</p>
 					);

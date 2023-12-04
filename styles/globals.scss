@@ -1,94 +1,36 @@
 @import './variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
-
-@font-face {
-	font-family: 'VagRounded';
-	src: url('./fonts/VagRounded/VAGRoundedStd-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'HelveticaRounded';
-	src: url('./fonts/HelveticaRounded/HelveticaRoundedLTStd-BdCn.ttf')
-		format('truetype');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'LiberationSans';
-	src: url('./fonts/liberation-sans/LiberationSans-Regular.ttf')
-		format('truetype');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('./fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'RalewayBold';
-	src: url('./fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'National';
-	src: url('./fonts/National/National_2_Regular.otf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-/* @font-face {
-	font-family: 'Pilcrowrounded';
-	src: url('./fonts/PilcrowRounded-Heavy.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Pilcrowrounded';
-	src: url('./fonts/PilcrowRounded-Semibold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 *,
 html,
 body {
 	// font-family: 'Bebas Neue', cursive;
-	font-family: 'LiberationSans';
+	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
 }
 
 .titleLogo * {
-	font-family: 'Ramabhadra', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 .titleLogo {
-	font-family: 'Ramabhadra', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .subTitleMain {
 	font-family: 'Fjalla One', sans-serif;
 }
 
-.Raleway {
-	font-family: 'RalewayBold';
+.swiper-button-prev {
+	color: #fff !important;
+}
+
+.swiper-button-next {
+	color: #fff !important;
 }
 
 @for $i from 0 through 15 {

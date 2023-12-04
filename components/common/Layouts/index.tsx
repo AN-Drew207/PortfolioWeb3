@@ -13,8 +13,8 @@ import { SidebarMobile } from './sidebars/mobile';
 const navItems = [
 	{ name: 'Home', link: '/', icon: <MenuIcon /> },
 	{ name: 'Projects', link: '/projects', icon: <MenuIcon /> },
-	{ name: 'Hackathons', link: '/hackathons', icon: <MenuIcon /> },
-	{ name: 'Certificates', link: '/certificates', icon: <MenuIcon /> },
+	// { name: 'Hackathons', link: '/hackathons', icon: <MenuIcon /> },
+	// { name: 'Certificates', link: '/certificates', icon: <MenuIcon /> },
 	// { name: 'E-BAR', link: '/eBar', icon: <MenuIcon /> },
 ];
 
@@ -27,7 +27,7 @@ export default function AppLayout() {
 				className={clsx(
 					'fixed top-0 z-50',
 					'bg-gray-900',
-					'w-[100%] xl:px-56 lg:px-36 px-8 py-4 flex flex-row items-center justify-between shadow-md'
+					'w-[100%] lg:px-36 px-8 py-4 flex flex-row items-center justify-between shadow-md'
 				)}
 			>
 				<div className="flex items-center">
@@ -110,7 +110,9 @@ export const NavbarItem: React.FC<any> = ({ name, link, route }) => {
 					)}
 				>
 					{/* <div className="flex items-center w-4">{icon}</div> */}
-					<h3 className={clsx('text-sm font-bold text-center')}>{name}</h3>
+					<h3 className={clsx('text-sm titleLogo font-[500] text-center')}>
+						{name}
+					</h3>
 				</div>
 			</div>
 		</Link>
