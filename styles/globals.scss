@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 *,
 html,
 body {
@@ -22,7 +20,7 @@ body {
 }
 
 .subTitleMain {
-	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Fjalla One', 'Bebas Neue', sans-serif;
 }
 
 .swiper-button-prev {
