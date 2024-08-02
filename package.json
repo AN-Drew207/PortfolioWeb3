@@ -3,9 +3,9 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "export SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
+		"dev": "next dev",
 		"build": "next build && next export ",
-		"start": "export SET NODE_OPTIONS=--openssl-legacy-provider next start",
+		"start": "next start",
 		"type-check": "tsc --project tsconfig.json --pretty --noEmit",
 		"lint": "eslint --ext js,jsx,ts,tsx --fix"
 	},

@@ -36,21 +36,21 @@ const Home = () => {
 	const Web2projects = [
 		{
 			name: 'Enders Gate Marketplace',
-			link: 'projects/front/enders_gate_marketplace',
+			link: 'projects/web3/enders_gate_marketplace',
 			image: '/img/eg_marketplace.png',
 			description:
 				'NFT marketplace where you can sell or buy any NFT related to Enders Gate',
 		},
 		{
 			name: 'Enders Gate Website',
-			link: 'projects/front/enders_gate_website',
+			link: 'projects/web3/enders_gate_website',
 			image: '/img/eg_website.png',
 			description:
 				'Website where you can find EG roadmap, all the news about Enders Gate and all the functionalities related to their NFTs',
 		},
 		{
 			name: 'ShareEth',
-			link: 'projects/front/share_eth',
+			link: 'projects/web3/share_eth',
 			image: '/img/share_eth.png',
 			description:
 				'Social media app to allow content creators to monetize over their work using streams of income. (Hackathon Project made in ETHOnline 2022)',
@@ -58,28 +58,28 @@ const Home = () => {
 
 		{
 			name: 'NFT Bolster',
-			link: 'projects/front/nft_bolster',
+			link: 'projects/web3/nft_bolster',
 			image: '/img/bolster.png',
 			description:
 				'NFT Bolster is a platform where NFTs are backed by real assets in order to have a floor price in the market, this platform allo users to purchase NFTs backed by certificated assets in the market',
 		},
 		{
 			name: 'C3 Blockchain',
-			link: 'projects/front/c3',
+			link: 'projects/web3/c3',
 			image: '/img/c3.png',
 			description:
 				'C3 blockchain consists in a L2 blockchain base in the OP Stack with Goerli as L1, where we modified the core of the EVM where gas fees implementation is located. Only users with a WorldID (as a proof of personhood) can get fees from their smart contracts. All of this allows smart contracts builders to obtain revenue from the use of their smart contracts. This solves the issue of public goods or projects such as Safe not having a solid revenue source.',
 		},
 		{
 			name: 'Shhh Spirits',
-			link: 'projects/front/shhh_spirits',
+			link: 'projects/web2/shhh_spirits',
 			image: '/img/shhh_spirits.png',
 			description:
 				'Shhh Spirits is a platform where users can look at their NFTs related to Shhh and buy Shhh Spirits products by using a Shopify Store by and easy and secure purchase process.',
 		},
 		{
 			name: 'Shhh Spirits Shopify',
-			link: 'projects/front/shhh_spirits_shopify',
+			link: 'projects/web2/shhh_spirits_shopify',
 			liveDemo: 'https://shhhspirits.myshopify.com/',
 			image: '/img/shhh_spirits_shopify.png',
 			description:

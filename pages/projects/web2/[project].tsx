@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination, Zoom } from 'swiper';
 
 const Project = () => {
+	const router = useRouter();
 	const { query } = useRouter();
 	const project: any = web2Projects.find((project, i) =>
 		project.link.includes(query.project?.toString() || '')
@@ -24,9 +25,12 @@ const Project = () => {
 				alt=""
 			/>
 			<div className="absolute top-28 md:left-16 left-10 text-[#000]">
-				<Link href={'/projects'}>
-					<ChevronLeftIcon className="w-8 cursor-pointer" />
-				</Link>
+				<ChevronLeftIcon
+					className="w-8 cursor-pointer"
+					onClick={() => {
+						router.back();
+					}}
+				/>
 			</div>
 			<h2 className="flex gap-1 text-center text-white md:text-4xl text-xl titleLogo font-[600] whitespace-nowrap relative">
 				<span className="text-[#000] pr-2">{'< '}</span>
